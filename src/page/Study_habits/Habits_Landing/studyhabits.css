@@ -1,0 +1,142 @@
+.Container_SHL {
+	width: 100svw;
+	height: 100vh;
+	min-height: auto;
+}
+.Content_Wrapper_SHL {
+	display: flex;
+	height: 100%;
+}
+.Content_SHL {
+	width: 100%;
+	height: 100%;
+}
+
+/* Title adjustments - Removed underline & moved slightly right */
+.title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 20px;
+	padding-left: 15px; /* Moves to the right */
+	border-bottom:solid 1px rgb(187, 182, 182); /* Underline effect */
+}
+
+.subtitle2 {
+	font-size: clamp(10px, 1vw, 14px);
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding: 15px 0;
+	padding-left: 15px; /* Moves to the right */
+	border-bottom:solid 1px rgb(187, 182, 182); /* Underline effect */
+	margin-top: 30px;
+	border-top: solid 1px rgb(187, 182, 182); /* Underline effect */;
+}
+
+/* Normal subtitle */
+.subtitle {
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 15px;
+	padding-left: 15px; /* Moves to the right */
+}
+
+/* Habit Cards */
+.habit-card {
+	flex: 1 1 200px; /* Smaller fixed width */
+	max-width: 200px;
+	min-width: 200px;
+	height: 100px; /* Adjusted height */
+	text-align: center;
+	background-color: #F8F9FA;
+	border: 1px solid #060606;
+	padding: 10px;
+	border-radius: 8px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 13px;
+	transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	margin-top: 20px;
+}
+
+/* Center the habit section */
+.top-habits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+}
+
+/* Subtle Hover Effect */
+.habit-card:hover {
+	transform: scale(1.02);
+	box-shadow: 2px 2px 10px rgba(106, 13, 173, 0.2);
+}
+
+/* Habit title improvements */
+.habit-title {
+	font-size: clamp(14px, 1.5vw, 18px);
+	font-weight: bold;
+	text-align: center;
+	width: fit-content;
+	max-width: 100%;
+	overflow-wrap: break-word;
+	white-space: normal;
+	text-decoration: none;
+	color: black;
+}
+
+/* Description inside habit cards */
+.habit-description {
+	font-size: 14px;
+	color: #555;
+	margin-top: 5px;
+}
+
+/* Responsive Layout */
+.top-habits, .grid-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 12px;
+}
+/* Remove underline from all links inside habit-card */
+.habit-card {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* Specifically target <p> inside the links */
+.habit-card p {
+    text-decoration: none !important;
+}
+
+/* Override all link states to prevent underline */
+.habit-card:link,
+.habit-card:visited,
+.habit-card:hover,
+.habit-card:active {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+	.top-habits, .grid-container {
+		justify-content: center;
+	}
+
+	.habit-card {
+		max-width: 170px;
+		min-width: 150px;
+	}
+
+	/* Keep titles aligned on mobile */
+	.title, .subtitle, .subtitle2 {
+		padding-left: 10px;
+	}
+}

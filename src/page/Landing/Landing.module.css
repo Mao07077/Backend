@@ -1,0 +1,500 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    
+}
+.Header {
+    grid-area: Header;
+    background-color: #002f87;
+    display: flex;
+  }
+Header {
+    width: 100%;
+    background-color: #002f87;
+    padding: 10px 20px;
+    color: white;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.Landing_Page {
+    display: grid;
+    grid-template-areas:
+      "Header Header"
+      "Content Content"
+      "Footer Footer";
+    grid-template-columns: 0.1fr 1fr;
+    height: auto;
+    width: 100vw;
+    background-color: #f0f8ff; /* Light blue background for the entire page */
+}
+.Landing_Page > div.Content {
+    display: flex;
+    justify-content: flex-start ;
+    height: auto;
+    grid-area: Content;
+  }
+.Content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 25px;
+    font-style: initial;
+    margin: 10px 10px;
+    font-size: 1.2em;
+    
+   
+  }
+
+.Intro_Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 50px;
+    padding: 10px;
+    margin-bottom: 120px;
+}
+
+
+
+.Text_Container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Text_Container h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+.News_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+    background-color: #f0f8ff; /* Light blue background for better contrast */
+    padding: 30px; /* Add padding for spacing */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.News_Container h2 {
+    font-size: 28px; /* Slightly larger font size */
+    font-weight: bold;
+    color: #003366; /* Dark blue for the heading */
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.News_Card {
+    width: 100%; /* Full width for a professional announcement */
+    max-width: 800px; /* Limit the width for better readability */
+    padding: 30px; /* Increased padding for a spacious layout */
+    background-color: #f9f9f9; /* Subtle light gray background */
+    border: 2px solid #003366; /* Dark blue border for professionalism */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left; /* Align text to the left for a formal layout */
+    margin: 20px auto; /* Center the card with spacing */
+    display: flex;
+    flex-direction: column; /* Default to column */
+    align-items: flex-start;
+    gap: 15px;
+}
+
+@media (min-width: 768px) {
+    .News_Card {
+        flex-direction: row; /* Switch to row for larger screens */
+    }
+
+    .News_Image {
+        margin-right: 15px; /* Add spacing for larger screens */
+        margin-bottom: 0; /* Remove bottom margin */
+    }
+}
+
+.News_Image {
+    /* Ensure responsiveness */
+    width: 200px;
+    height: 150px;
+    flex-shrink: 0; /* Prevent shrinking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #ccc;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.News_Card p {
+    font-size: 18px; /* Larger font size for readability */
+    color: #333; /* Neutral dark gray text color */
+    line-height: 1.8; /* Improved line spacing for readability */
+    margin: 0;
+}
+
+.News_Card h3 {
+    font-size: 24px; /* Larger heading for emphasis */
+    color: #003366; /* Dark blue for the heading */
+    margin-bottom: 15px; /* Space between heading and content */
+    font-weight: bold;
+}
+
+.Text_Container div {
+    width: 100%;
+}
+
+
+.Image_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Adjust size */
+    max-width: 400px; /* Set max width */
+}
+
+.Image_Container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow */
+}
+
+.featured-text h2{
+  Margin-top: 50px;
+    
+}
+.featured-courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 50px; /* Adjusted top margin for better spacing */
+    gap: 10px; /* Add spacing between the heading and description */
+}
+
+.Featured_Description {
+    text-align: center;
+    font-size: 18px;
+    color: #003366;
+    margin-bottom: 20px;
+    font-weight: 500;
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+.Course_Grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the grid vertically */
+    gap: 15px; /* Spacing between course cards */
+    margin: 0 auto; /* Center the grid within its container */
+    padding: 15px;
+    max-width: 1200px; /* Limit the width of the grid */
+}
+
+.Course_Card {
+    width: 180px; /* Reduced width */
+    height: 260px; /* Reduced height */
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       border: 1px solid #ddd;
+}
+
+
+.TopRated,
+.Recommended,
+.New {
+    background-color: #e6f0ff; /* Light blue for all cards */
+    border: 2px solid #0056e8; /* Consistent blue border */
+    color: #003366; /* Dark blue for text */
+}
+
+.Placeholder {
+    width: 100%;
+    height: 120px; /* Reduced height */
+    background-color: #f4f4f4; /* Matches the grid background */
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.Course_Label {
+    font-weight: bold;
+    font-size: 12px; /* Reduced font size */
+    padding: 5px 10px;
+    background-color: #003366; /* Matches the header */
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.Course_Title {
+    font-size: 1em; /* Reduced font size */
+    font-weight: 600;
+    color: #333; /* Neutral text color */
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.Course_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width of the container */
+    max-width: 320px; /* Limit the width of each container */
+    padding: 10px; /* Add spacing around the card */
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+   
+}
+
+
+
+.Course_Container_1 {
+    background-color: #e3f2fd; /* Light blue */
+    border: 2px solid #90caf9; /* Blue border */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.Course_Container_2 {
+    background-color: #fce4ec; /* Light pink */
+    border: 2px solid #f48fb1; /* Pink border */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Course_Container_3 {
+    background-color: #e8f5e9; /* Light green */
+    border: 2px solid #a5d6a7; /* Green border */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+
+.course-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 100%; /* Take full width of the container */
+    border-radius: 10px;
+    box-shadow: none; /* Remove shadow from the card itself */
+}
+
+.featured-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 80px;
+}
+
+.featured-text h2, p {
+    display: flex;
+    flex-direction: row;
+}
+
+.featured-text h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #003366;
+}
+
+.featured-text p {
+    margin: 0; 
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.Featured_Description {
+    margin-left: 580px;
+    text-align: center;
+    font-size: 18px;
+    color: #555; /* Subtle gray for text */
+    margin-bottom: 20px; /* Space between the description and the grid */
+}
+
+.Placeholder{
+    width: 100%;
+    height: 200px;
+}
+
+.Placeholder_Box {
+    width: 100%;
+    height: 400px;
+}
+
+.course-label {
+    background-color: #003366;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.course-title {
+    font-weight: bold;
+}
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.image-section img {
+    max-width: 60%; /* Adjust the size */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.Cbrc_Description {
+    width: 100%; /* Full width of the viewport */
+    background: linear-gradient(to right, #003366, #0055a4); /* Blue gradient */
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Keeps it above other elements */
+    margin-bottom: 50px; /* Add spacing below this section */
+}
+
+.Cbrc_Background {
+    max-width: 900px; /* Limits text width for readability */
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Adjust these styles */
+.LoginBtn {
+    width: auto; /* Ensure the width adjusts to the content */
+    padding: 8px 16px; /* Reduce padding if it's too large */
+    font-size: 14px; /* Adjust font size if needed */
+    color:rgb(250, 245, 245); /* Change text color to black */
+}
+
+
+
+/* Footer as an image */
+.Footer {
+    background-color: #002f87; /* Adjust based on your footer image */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    bottom: 0;
+    width: 100%;
+}
+.Footer p {
+    display: flex;
+    justify-content: center;
+    background-color: #002f87; /* Adjust based on your footer image */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 1000px) {
+    .course-grid {
+        flex-direction: column;
+    }
+.Intro_Container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+
+    
+}
+.Text_Container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.Course_Grid {
+    flex-direction: column; /* Stack courses vertically on smaller screens */
+    align-items: center; /* Center align for better appearance */
+    padding: 10px;
+    justify-content: center; /* Centers the grid */
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-left: 100px;
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+
+
+    .News_Card {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: center; /* Center align for better appearance */
+        text-align: center; /* Center text for better readability */
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
+
+    .News_Image {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 15px; /* Add spacing below the image */
+        margin: 0 auto; /* Ensure it stays centered */
+    }
+
+    .Featured_Description {
+        margin-left: 0; /* Remove left margin for smaller screens */
+        margin-right: 0; /* Remove right margin for smaller screens */
+        text-align: center; /* Ensure text is centered */
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .Course_Grid {
+        flex-direction: column; /* Stack courses vertically */
+        align-items: center; /* Center align for better appearance */
+        justify-content: center; /* Center the grid */
+        gap: 20px; /* Add spacing between items */
+        margin: 0 auto; /* Center the grid horizontally */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+
+

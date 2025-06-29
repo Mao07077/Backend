@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top for more flexibility */
+    min-height: 100vh; /* Allow full screen height coverage */
+    margin: 0;
+    padding: 20px; /* Add padding to prevent the form from hitting the edges */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.Signup-container {
+    max-width: 600px; /* Constrain form width for large screens */
+    width: 100%;
+    height: 900px;
+    margin: 90px auto; /* Add space from the top */
+    background-color: #f5f5f6;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(114, 98, 98, 0.1);
+    
+}
+
+.Signup-container h2 {
+    background-color: #002f87;
+    color: white;
+    margin: 0 -30px 20px -30px;
+    padding: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 24px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"],
+.styled-select {
+    width: 100%; /* Full-width inputs */
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: black	;
+   
+     
+}
+.Signup-container input:focus {
+    border-bottom: 2px solid #374a6e;
+    
+}
+
+.Signup-container a {
+    display: block;
+    margin-top: 10px;
+    color: #002f87;
+    text-decoration: none;
+}
+
+.Signup-container a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.Signup-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input[type="submit"] {
+    padding: 12px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #17408b;
+}
+.gender{
+    display: flex;
+    gap: 10px
+}
+
+    /* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .Signup-container {
+        width: 100%;
+        padding: 20px;
+        margin: 100px 20px 20px; /* Add top margin to prevent overlap */
+    }
+
+    form {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .Signup-container {
+        width: 70%;
+        padding: 15px;
+        margin: 120px auto 20px; /* Increase top margin for smaller screens */
+    }
+
+    .Signup-container h2 {
+        margin: 0 -15px 20px -15px;
+        padding: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form input[type="number"],
+    form input[type="date"] {
+        width: 100%;
+        color: #080808;
+    }
+}
+
+.styled-select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.styled-select:focus {
+    border-bottom: 2px solid #002f87;
+}

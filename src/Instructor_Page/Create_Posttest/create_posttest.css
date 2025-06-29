@@ -1,0 +1,339 @@
+.create-posttest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Arial', sans-serif;
+}
+
+.create-posttest h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.create-posttest input[type="text"] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-posttest input[type="text"]::placeholder {
+    color: #bbb;
+}
+
+.question {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.question input[type="text"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 20px);
+}
+
+.question select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.create-posttest .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.add-submit-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.add-question-button,
+.submit-button {
+    flex: 1;
+}
+
+.create-posttest button {
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #87ceeb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    width: 40%;
+    height: 50%;
+    margin: 0 5px;
+}
+
+.create-posttest button:hover {
+    background-color: #5bb8e6;
+}
+
+.create-posttest button:active {
+    background-color: #4aa3d8;
+}
+
+.add-question-button {
+    background-color: #2196f3 !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    padding: 6px 12px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    margin-top: 15px !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.add-question-button:hover {
+    background-color: #1976d2 !important;
+}
+
+.add-question-button:active {
+    background-color: #1565c0 !important;
+}
+
+.remove-question-button {
+    background-color: #f44336 !important;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.remove-question-button:hover {
+    background-color: #d32f2f !important;
+}
+
+.remove-question-button:active {
+    background-color: #b71c1c !important;
+}
+
+.submit-button {
+    background-color: #4caf50 !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    padding: 8px 16px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    margin-top: 15px !important;
+    transition: background-color 0.3s ease !important;
+    white-space: nowrap !important;
+}
+
+.submit-button:hover {
+    background-color: #388e3c !important;
+}
+
+.submit-button:active {
+    background-color: #2e7d32 !important;
+}
+
+.posttest-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 100%;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.question-input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.option-input {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.correct-answer-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.instructions {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #e3f2fd;
+    border: 1px solid #90caf9;
+    border-radius: 8px;
+    color: #0d47a1;
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.instructions h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.instructions ol {
+    padding-left: 25px;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .create-posttest {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .question-card {
+        padding: 15px;
+    }
+
+    .create-posttest input[type="text"],
+    .correct-answer-select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .add-submit-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .add-question-button,
+    .submit-button,
+    .remove-question-button {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 14px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .create-posttest h1 {
+        font-size: 22px;
+    }
+
+    .instructions {
+        font-size: 14px;
+    }
+
+    .question-card {
+        font-size: 14px;
+    }
+
+    .create-posttest input[type="text"],
+    .correct-answer-select {
+        font-size: 12px;
+    }
+
+    .add-question-button,
+    .submit-button,
+    .remove-question-button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .create-posttest h1 {
+        font-size: 18px;
+    }
+
+    .instructions {
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    .question-card {
+        margin-bottom: 15px;
+    }
+
+    .create-posttest input[type="text"],
+    .correct-answer-select {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    .add-submit-container {
+        gap: 10px;
+    }
+
+    .add-question-button,
+    .submit-button,
+    .remove-question-button {
+        font-size: 10px;
+        padding: 10px 16px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        text-align: center;
+    }
+}
